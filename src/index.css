@@ -1,0 +1,219 @@
+/* 
+.head{
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  padding-left: 50%;
+  }
+
+
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--clr-pink);
+  color: var(--clr-grey-9);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+main {
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 550px;
+  margin: 5rem ;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--dark-shadow);
+}
+.container h3 {
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+
+.container button {
+  color: var(--clr-white);
+  display: block;
+  width: 100%;
+  border-color: transparent;
+  background: var(--clr-pink);
+  margin:  auto 0 auto;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+ 
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  outline: 1px solid rgba(242, 138, 178, 0.8);
+  cursor: pointer;
+} */
+body {font-family: Arial, Helvetica, sans-serif;}
+/* form {border: 1px  solid black;
+width:auto;
+} */
+select{
+  height:34px;
+  border: 2px soft black;
+}
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height:37px;
+  border-radius: 4px;
+}
+body {
+ background-color: grey
+}
+.button {
+  background-color: #04AA6D;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  width: 45%;
+  left:100px;
+  height:37px;
+
+}
+.board-list{
+  border: solid black 1px;
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+button{
+  border-radius: 4px;
+}
+.form{
+  height:auto;
+  width: 100%;
+  padding-left: 30%;
+}
+.form-sign{
+  padding-left: 30%;
+  height:auto;
+  width: 80%;
+}
+.log{
+  padding-left: 20%;
+  padding-right: 30%;
+  width:auto;
+}
+.formdiv{
+  width:auto;
+  border: solid none 1px;
+  
+}
+.cancelbtn {
+  width: 45%;
+  border:none;
+  background-color: #f44336;
+  height:37px;
+
+}
+.boardpg{
+  padding-top:8px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border:none;
+  background-color: #f44336;
+  height:37px;
+  text-align: center;
+  border-radius: 4px;;
+}
+.boardpgs{
+  padding-top:8px;
+  padding-bottom: 10px;
+  padding-right: 86px;
+  padding-left: 90px;
+  border:none;
+  background-color: #f44336;
+  height:37px;
+  text-align: center;
+  border-radius: 4px;
+  width:300px;
+}
+
+.boardpg:hover{
+  opacity: 0.8;
+}
+.removebtn {
+  width: 10%;
+  padding: 10px;
+  border:none;
+  background-color: #f44336;
+  height:37px;
+
+}
+h4{
+  color:red;
+}
+input:hover{
+  border-color: red;
+}
+p{
+  width:auto;
+  height: auto;;
+  text-align: left;
+  padding-top: 1%;
+  color: black;
+  font-size: larger;
+  opacity: 0.7;
+}
+.addbtn {
+  width: 10%;
+  border:none;
+  background-color:green;
+  height:37px;
+
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+ padding-left: 50%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+

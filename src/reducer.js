@@ -1,9 +1,15 @@
 export const reducer = (state, action) => {
   if (action.type === "DELETE-COLOUMN") {
+<<<<<<< HEAD
     console.log(action.category);
     return {
       ...state,
       coloumns: state.coloumns.filter((item) => item.text !== action.category),
+=======
+    return {
+      ...state,
+      coloumns: state.coloumns.filter((item) => item !== action.category),
+>>>>>>> 7adf42ff4fffb3bdc6f27cada53d484020c15aaa
     };
   }
   if (action.type === "ADD_TASK") {
@@ -11,7 +17,10 @@ export const reducer = (state, action) => {
       type: action.func,
       id: new Date().getTime().toString(),
       content: action.text,
+<<<<<<< HEAD
       isEditing: false,
+=======
+>>>>>>> 7adf42ff4fffb3bdc6f27cada53d484020c15aaa
     };
     return {
       ...state,
@@ -41,7 +50,11 @@ export const reducer = (state, action) => {
     return { ...state };
   }
   if (action.type === "CLEAN") {
+<<<<<<< HEAD
     return { ...state, text: [], coloumns: [], boards: [], logedIn: true };
+=======
+    return { text: [], coloumns: [], boards: [] };
+>>>>>>> 7adf42ff4fffb3bdc6f27cada53d484020c15aaa
   }
   if (action.type === "CHANGE-PLACE") {
     state.text.map((item) => {
@@ -54,13 +67,19 @@ export const reducer = (state, action) => {
 
   if (action.type === "ADD-COL") {
     const findItem = state.coloumns.find((item) => item === action.col);
+<<<<<<< HEAD
     const newColoumn = { text: action.text, type: action.model };
+=======
+    const newColoumn = { text: action.text, type: action.type };
+    console.log(newColoumn);
+>>>>>>> 7adf42ff4fffb3bdc6f27cada53d484020c15aaa
     if (!findItem) {
       return { ...state, coloumns: [...state.coloumns, newColoumn] };
     }
     return { ...state };
   }
   if (action.type === "ADD-BOARD") {
+<<<<<<< HEAD
     let newBoard = action.text;
     return { ...state, boards: [...state.boards, newBoard] };
   }
@@ -81,5 +100,13 @@ export const reducer = (state, action) => {
   }
   if (action.type === "SHOW-BOARDER") {
     return { ...state, showBoarder: !state.showBoarder };
+=======
+    // let newBoard = {
+    //   content: action.text,
+    //   id: new Date().getTime().toString(),
+    // };
+    // console.log(state.boards);
+    return { ...state, boards: [...state.boards, action.text] };
+>>>>>>> 7adf42ff4fffb3bdc6f27cada53d484020c15aaa
   }
 };

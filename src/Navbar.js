@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "./context";
 export const Navbar = () => {
+<<<<<<< HEAD
   const { clean, exit, state } = useGlobalContext();
   return (
     <nav>
@@ -12,6 +13,16 @@ export const Navbar = () => {
       <button onClick={exit} className="btn">
         exit
       </button>
+=======
+  const { clean, addCol } = useGlobalContext();
+  return (
+    <nav>
+      <h1 className="head">todo</h1>
+      <button onClick={clean} className="btn">
+        clean
+      </button>
+
+>>>>>>> 7adf42ff4fffb3bdc6f27cada53d484020c15aaa
       <hr />
     </nav>
   );
